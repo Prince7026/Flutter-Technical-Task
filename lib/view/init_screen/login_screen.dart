@@ -21,7 +21,6 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
             Text(
               "Login",
               style: TextStyle(fontSize: 28.sp, color: Colors.black, fontWeight: FontWeight.w600),
@@ -40,11 +39,17 @@ class LoginScreen extends StatelessWidget {
               controller: _userNameTextController,
               label: "Your Username",
               hintText: "Enter Your Username",
+              keyboardType: TextInputType.name,
             ),
 
             16.height,
 
-            AppLabeledTextField(controller: _emailTextController, label: "Your Email", hintText: "Enter Your Email"),
+            AppLabeledTextField(
+              controller: _emailTextController,
+              label: "Your Email",
+              hintText: "Enter Your Email",
+              keyboardType: TextInputType.emailAddress,
+            ),
 
             16.height,
 
@@ -52,6 +57,7 @@ class LoginScreen extends StatelessWidget {
               controller: _passwordTextController,
               label: "Your Password",
               hintText: "Enter Your Password",
+              obscureText: true,
             ),
 
             Spacer(),
@@ -91,7 +97,6 @@ class LoginScreen extends StatelessWidget {
                 );
               },
             ),
-
           ],
         ).paddingSymmetric(horizontal: 20.w, vertical: 16.h),
       ),
