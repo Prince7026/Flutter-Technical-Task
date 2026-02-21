@@ -68,9 +68,11 @@ The app uses username instead of email and documents this limitation clearly.
 
 ## Test Credentials
 
-Username: emilys
-Email: emily.johnson@x.dummyjson.com
-Password: emilyspass
+Username: emilys,
+
+Email: emily.johnson@x.dummyjson.com,
+
+Password: emilyspass,
 
 ---
 
