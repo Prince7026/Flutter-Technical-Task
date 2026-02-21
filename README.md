@@ -49,6 +49,21 @@ This structure keeps the code clean, readable, and easy to maintain.
 
 ---
 
+## Folder Structure
+
+The project follows a simple MVVM-style structure with clear separation of concerns.
+
+lib/
+├── common_widgets/
+├── model/
+├── shimmer_widgets/
+├── utils/
+├── view/
+├── view_model/
+└── main.dart
+
+---
+
 ## API Note
 
 DummyJSON authentication supports **username-based login only**.  
